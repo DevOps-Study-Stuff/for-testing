@@ -10,8 +10,8 @@ spec:
     name     : in-cluster
     namespace: argocd
   source:
-    ###path   : "demo-prod/applicatio"
-    path   : "dev-env"
+    ###path   : "demo-prod/application"
+    path   : "dev-env/nginx-dev"
     ###repoURL: "git@github.com:adv4000/argocd.g"
     repoURL: "https://github.com/DevOps-Study-Stuff/for-testing"
     ###targetRevision: HEAD
