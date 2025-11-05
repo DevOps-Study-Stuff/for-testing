@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name     : rootapp
+  name     : root-app
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -12,7 +12,7 @@ spec:
   source:
     ###path   : "demo-prod/applicatio"
     ###repoURL: "git@github.com:adv4000/argocd.g"
-    repoURL: "https://github.com/DevOps-Study-Stuff"
+    repoURL: "https://github.com/DevOps-Study-Stuff/for-testing"
     ###targetRevision: HEAD
   project: default
   syncPolicy:
