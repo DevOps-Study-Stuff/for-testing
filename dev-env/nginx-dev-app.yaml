@@ -8,7 +8,7 @@ metadata:
 spec:
   destination:
     name     : in-cluster
-    namespace: jenkins-dev
+    namespace: nginx-dev
   source:
     path: dev-env/nginx
     ###repoURL: https://github.com/DevOps-Study-Stuff/for-testing
