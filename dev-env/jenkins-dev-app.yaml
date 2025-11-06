@@ -11,7 +11,8 @@ spec:
     namespace: jenkins-dev
   source:
     path: dev-env/jenkins
-    repoURL: https://github.com/DevOps-Study-Stuff/for-testing
+    ###repoURL: https://github.com/DevOps-Study-Stuff/for-testing
+    repoURL: "git@github.com:DevOps-Study-Stuff/for-testing.git"
     targetRevision: HEAD
   sources: []
   project: default
