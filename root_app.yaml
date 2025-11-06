@@ -11,7 +11,7 @@ spec:
     namespace: argocd
   source:
     ###path   : "demo-prod/application"
-    path   : "dev-env/nginx-dev"
+    path   : "dev-env"
     ###repoURL: "git@github.com:adv4000/argocd.g"
     repoURL: "https://github.com/DevOps-Study-Stuff/for-testing"
     ###targetRevision: HEAD
