@@ -64,7 +64,7 @@ spec:
             initialDelaySeconds: 60
             periodSeconds: 30
           volumeMounts:
-            - name: jenkins-data
+            - name: jenkins-dev-data
               mountPath: /var/jenkins_home
       volumes:
         - name: jenkins-dev-data
