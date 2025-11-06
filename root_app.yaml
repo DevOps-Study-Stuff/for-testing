@@ -14,7 +14,10 @@ spec:
     path   : "dev-env"
     ###repoURL: "git@github.com:adv4000/argocd.g"
     repoURL: "https://github.com/DevOps-Study-Stuff/for-testing"
-    ###targetRevision: HEAD
+    targetRevision: HEAD
+    ###directory:
+      ###recurse: true
+  sources: []
   project: default
   syncPolicy:
     automated:
