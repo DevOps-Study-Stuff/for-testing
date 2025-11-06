@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-dev-app
+spec:
+  destination:
+    namespace: nginx-dev
+    server: https://kubernetes.default.svc
+  source:
+    path: dev-env/nginx
+    repoURL: https://github.com/DevOps-Study-Stuff/for-testing
+    targetRevision: HEAD
+  sources: []
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      enabled: true
+    syncOptions:
+      - CreateNamespace=true
