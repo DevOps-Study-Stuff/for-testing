@@ -8,7 +8,7 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-dev-deployment
   namespace: nginx-dev
 spec:
   replicas: 3
@@ -21,7 +21,7 @@ spec:
         app: nginx-dev
     spec:
       containers:
-        - name: nginx
+        - name: nginx-dev
           image: nginx:latest
           ports:
             - containerPort: 80
