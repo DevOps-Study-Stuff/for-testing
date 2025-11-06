@@ -8,7 +8,8 @@ spec:
     server: https://kubernetes.default.svc
   source:
     path: dev-env/nginx
-    repoURL: https://github.com/DevOps-Study-Stuff/for-testing
+    ###repoURL: https://github.com/DevOps-Study-Stuff/for-testing
+    repoURL: https://github.com/DevOps-Study-Stuff/for-testing.git
     targetRevision: HEAD
   sources: []
   project: default
